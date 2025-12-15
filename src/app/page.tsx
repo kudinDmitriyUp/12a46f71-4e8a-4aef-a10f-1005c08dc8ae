@@ -10,6 +10,7 @@ import PricingCardSix from '@/components/sections/pricing/PricingCardSix';
 import FaqSplitMedia from '@/components/sections/faq/FaqSplitMedia';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterLogoReveal from '@/components/sections/footer/FooterLogoReveal';
+import RadialGradientBackground from '@/components/background/RadialGradientBackground';
 import { Sparkles } from "lucide-react";
 
 export default function PilatesPage() {
@@ -20,12 +21,19 @@ export default function PilatesPage() {
       borderRadius="rounded"
       contentWidth="small"
       sizing="medium"
-      background="noise"
+      background="none"
       cardStyle="layered-gradient"
       primaryButtonStyle="flat"
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
+      <RadialGradientBackground
+        centerColor="var(--background)"
+        edgeColor="var(--color-primary-cta)"
+        size="125% 125%"
+        position="50% 10%"
+      />
+      
       <div id="nav" data-section="nav">
         <NavbarStyleFullscreen 
           brandName="Pilates Flow"
