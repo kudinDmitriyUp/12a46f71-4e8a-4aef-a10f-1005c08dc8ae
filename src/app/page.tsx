@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from '@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen';
@@ -230,9 +230,7 @@ export default function PilatesPage() {
                 "One free private session",
                 "Member exclusive events"
               ],
-              buttons: [{ text: "Choose Active", href: "contact" }],
-              badge: "Most Popular",
-              badgeIcon: Sparkles
+              buttons: [{ text: "Choose Active", href: "contact" }]
             },
             {
               id: "premium",
